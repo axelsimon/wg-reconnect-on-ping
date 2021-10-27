@@ -7,7 +7,7 @@ PING_TARGET=1.1.1.1
 echo "Stopping Wireguard tunnel $WG_TUNNEL"
 sudo systemctl stop wg-quick@$WG_TUNNEL.service
 echo "Wireguard tunnel $WG_TUNNEL stopped"
-while ! ping -c1 -i0.25 $PING_TARGET &>/dev/null
+while ! ping -c1 -i0.25 $PING_TARGET >/dev/null 2>&1
     do echo "No ping to server - $(date)"
 done
 echo "Successful ping to server $PING_TARGET: guard the wires - $(date)"

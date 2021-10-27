@@ -19,7 +19,7 @@ If you want to create a systemd service, you can simply run:
 ```
 sudo systemctl enable wg-quick@wg1.service
 ```
-as long as you have a wg-quick config located at `/etc/wireguard/wg0.conf`.
+as long as you have a wg-quick config located at `/etc/wireguard/wg1.conf`.
 
 ## Usage
 

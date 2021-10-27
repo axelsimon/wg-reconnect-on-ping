@@ -18,7 +18,7 @@ This script assumes you're using a wg-quick@ systemd service.
 ## Usage
 
 First modify the script to make sure the $WG_TUNNEL variable is adequately defined for your setup.
-The script can then be launched as your current user when you need to stop your wireguard tunnel and have it start again as soon as possible:
+The script can then be launched as your current user when you need to stop your wireguard tunnel and have it started again as soon as possible:
 
 `./wg-reconnect-on-ping.sh`
 
